@@ -45,7 +45,7 @@ The whole of the framework is composed of three parts
 
     - **Child Repository** is a repository that is created by our Jenkins automation engine by collating our templates in the Master Repository and values given as inputs by engineers to the Jenkins. Basicaly it means that the templates in the Master Repository will be modified by our Jenkins automation, based on the user inputs and kept in a separate repo which should be IaC repo our our new project going forward.
 
-![Alt Text](/images/DevOptymize-3-parts.jpg)
+[](/images/DevOptymize-Infra-build-phase.png)
 
 ## How to start with DevOptimize?
 
