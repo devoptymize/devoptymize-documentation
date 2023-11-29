@@ -97,13 +97,13 @@ To configure seed job , [click here](https://gitlab.cloudifyops.com/devoptymize/
 
 
 
-### CREATE CLIENT SPECIFIC IAM USER
+### CREATE PROJECT SPECIFIC IAM USER
 
-This pipeline will create client-specific IAM user creds in Jenkins credentials .
+This pipeline will create project-specific IAM user creds in Jenkins credentials .
 To configure pipeline [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_client_specific_iam_user_reame.md)
 
 
-### MULTIBRANCH PIPELINES UNDER CLIENT VIEW 
+### MULTIBRANCH PIPELINES UNDER PROJECT VIEW 
 
 The [multi-branch pipeline](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/multibranch_pipeline_udner_clientview_readme.md)  of the client_jenkins repository. This includes loading and trigegering the resource pipeline . 
 
@@ -113,13 +113,13 @@ The [multi-branch pipeline](https://gitlab.cloudifyops.com/devoptymize/documenta
 
 ### CREATE AWS_SECRET PIPELINE 
 
-The pipeline is to create the AWS credetnials in jenkins credentials manager for the client which will be AWS account specific.
+The pipeline is to create the AWS credetnials in jenkins credentials manager for the project which will be AWS account specific.
 To configure pipeline, [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_aws_secret_pipeline_readme.md)
 
 
 
 ### CREATE S3_DYNAMODB PIPELINE
-The pipeline is to create an S3 bucket storing terraform statefile and DynamoDB for maintaining the lock for the client .
+The pipeline is to create an S3 bucket storing terraform statefile and DynamoDB for maintaining the lock for the project .
 To configure pipeline , [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_s3dynamoDB_pipeline_readme.md)
 
 
