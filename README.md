@@ -9,7 +9,7 @@ Devoptymize is intended to ease or help in the bootstraping of a new project dur
 ## How do we make it happen?
 
 
-![Alt Text](/images/DevOptymize_3_phases.jpg)
+![Alt Text](./images/DevOptymize_3_phases.jpg)
 
 We do follow a three-step approach to bootstrap your journey on AWS
 
@@ -29,7 +29,7 @@ Platform with which we can fully automate  Zero Downtime deployments to enable t
 
 Next phase would be to integrate observability systems to ensure effective monitoring of the platform. Our framework offers enhanced observability and can leverage reusable code which empowers the applications to define the metrics, alerts, and escalations they require. With our framework, you will have access to visually appealing dashboards and expertly crafted Grafana dashboards. We will be able to take action on relevant alerts and receive notifications via Slack
 
-Read more about the DevOptymize building blocks [here](/Documentation/2.%20building_blocks.md)
+Read more about the DevOptymize building blocks [here](./Documentation/2.%20building_blocks.md)
 
 ## DevOptymize Components
 
@@ -49,7 +49,7 @@ The whole of the framework is composed of three parts
 
 ## How to start with DevOptimize?
 
-![Alt Text](/images/DevOptymize-3-flow.jpg)
+![Alt Text](./images/DevOptymize-3-flow.jpg)
 
 ### Step 1 (#new-repo)
 
@@ -62,16 +62,15 @@ Create new repos with the below names based on the IaC Tools selected
    
 Fork  the below repos 
 
-   1. [DevOptymize_Jenkins_Pipelines]()
-   2. [DevOptymize_Jenkins_Shared_Libraries]()
-   3. [DevOptymize_Jenkins_Config]()
+   1. [DevOptymize_Jenkins_Pipelines](https://github.com/devoptymize/devoptymize-jenkins-pipelines)
+   2. [DevOptymize_Jenkins_Shared_Libraries](https://github.com/devoptymize/devoptymize-jenkins-shared-libraries)
 
 (follow [link]() for more details)
 
 ### Step 2
 
-1. The users/enginners to update the new git urls that was created in step 1 in the shared libraries (follow [link](/Documentation/update_shared_libs.md) for more details).
-2. Run the [shell script]() to create jenkins server on EC2 (follow [link](/Documentation/Install_&_configure_jenkins_using_script.md) for more details).
+1. The users/enginners to update the new git urls that was created in step 1 in the shared libraries (follow [link](./Documentation/update_shared_libs.md) for more details).
+2. Run the [shell script]() to create jenkins server on EC2 (follow [link](./Documentation/Install_&_configure_jenkins_using_script.md) for more details).
 3. Configure the git user credentials to the jenkins under the name devoptymize. < WIP >
 4. Create clientspecific jenkins user and creating roles and assigning it to the user < WIP >
    
@@ -91,7 +90,7 @@ Fork  the below repos
 
 The  Seed job creates a view that will be client specific. A multi-branch pipeline of the  respective repository which includes loading the pipelines ,creating AWS credentials in Jenkins credential manage, and creating the S3 & DynamoDB to store the Terraform state files and manage the Terraform lock respectively. 
 
-To configure seed job , [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/seedjob_reamdme.md) 
+To configure seed job , [click here](.Documentation/seedjob_reamdme.md) 
 
 
 
@@ -100,12 +99,12 @@ To configure seed job , [click here](https://gitlab.cloudifyops.com/devoptymize/
 ### CREATE PROJECT SPECIFIC IAM USER
 
 This pipeline will create project-specific IAM user creds in Jenkins credentials .
-To configure pipeline [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_client_specific_iam_user_reame.md)
+To configure pipeline [click here](./Documentation/create_client_specific_iam_user_reame.md)
 
 
 ### MULTIBRANCH PIPELINES UNDER PROJECT VIEW 
 
-The [multi-branch pipeline](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/multibranch_pipeline_udner_clientview_readme.md)  of the client_jenkins repository. This includes loading and trigegering the resource pipeline . 
+The [multi-branch pipeline](./Documentation/multibranch_pipeline_udner_clientview_readme.md)  of the client_jenkins repository. This includes loading and trigegering the resource pipeline . 
 
 
 
@@ -114,13 +113,13 @@ The [multi-branch pipeline](https://gitlab.cloudifyops.com/devoptymize/documenta
 ### CREATE AWS_SECRET PIPELINE 
 
 The pipeline is to create the AWS credetnials in jenkins credentials manager for the project which will be AWS account specific.
-To configure pipeline, [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_aws_secret_pipeline_readme.md)
+To configure pipeline, [click here](./Documentation/create_aws_secret_pipeline_readme.md)
 
 
 
 ### CREATE S3_DYNAMODB PIPELINE
 The pipeline is to create an S3 bucket storing terraform statefile and DynamoDB for maintaining the lock for the project .
-To configure pipeline , [click here](https://gitlab.cloudifyops.com/devoptymize/documentation/-/blob/main/Readme%20files/create_s3dynamoDB_pipeline_readme.md)
+To configure pipeline , [click here](./Documentation/create_s3dynamoDB_pipeline_readme.md)
 
 
 
