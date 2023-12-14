@@ -88,7 +88,7 @@ Fork  the below repos
 
 The  Seed job creates a view that will be client specific. A multi-branch pipeline of the  respective repository which includes loading the pipelines ,creating AWS credentials in Jenkins credential manage, and creating the S3 & DynamoDB to store the Terraform state files and manage the Terraform lock respectively. 
 
-To configure seed job , [click here](.Documentation/seedjob_reamdme.md) 
+To configure seed job , [click here](./Documentation/seedjob_reamdme.md) 
 
 
 
